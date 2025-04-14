@@ -15,7 +15,7 @@ class SplashScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/logo.png', width: 192),
+                Image.asset('assets/logo.png', width: 191),
                 Text(
                   'Um parceiro inovador para sua',
                   style: TextStyle(color: Colors.white),
