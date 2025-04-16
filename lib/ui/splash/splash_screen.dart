@@ -12,20 +12,38 @@ class SplashScreen extends StatelessWidget {
         children: [
           Image.asset('assets/banners/banner_splash.png'),
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset('assets/logo.png', width: 191),
-                Text(
-                  'Um parceiro inovador para sua',
-                  style: TextStyle(color: Colors.white),
-                ),
-                Text(
-                  'Melho experiência culinária',
-                  style: TextStyle(color: AppColors.mainColor),
-                ),
-                ElevatedButton(onPressed: () {}, child: Text('bora')),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 32,
+                children: [
+                  Image.asset('assets/logo.png', width: 191),
+                  Column(
+                    children: [
+                      Text(
+                        'Um parceiro inovador para sua',
+                        style: TextStyle(color: Colors.white, fontSize: 22.8),
+                      ),
+                      Text(
+                        'Melhor experiência culinária!',
+                        style: TextStyle(
+                          color: AppColors.mainColor,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('bora!'),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
